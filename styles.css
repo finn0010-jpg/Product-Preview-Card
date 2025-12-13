@@ -31,6 +31,8 @@ body {
     align-items: center;
     justify-content: center;
     font-family: var(--ff-fraunces);
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -115,34 +117,4 @@ button img {
 
 button:hover {
     background-color: var(--green-700);
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    img {
-        width: 90%;
-    }
-
-    .label {
-        font-size: 16px;
-    }
-
-    .productName {
-        font-size: 1.5rem;
-    }
-
-    .description {
-        font-size: 1.2rem;
-    }
-
-    .sale {
-        font-size: 2.5rem;
-    }
-
-    button {
-        width: 70%;
-    }
 }
