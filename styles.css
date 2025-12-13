@@ -47,41 +47,44 @@ img {
 }
 
 .label {
-    padding: 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     letter-spacing: 0.3rem;
     font-weight: var(--fw-500);
     font-family: var(--ff-montserrat);
-    font-size: var(--fs-p);
+    font-size: 14px;
     color: var(--grey);
 }
 
 .productName {
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     font-weight: var(--fw-700);
     color: var(--black);
 }
 
 .description {
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: var(--fs-p);
     font-family: var(--ff-montserrat);
     font-weight: var(--fw-500);
     color: var(--grey);
 }
 
 .price p {
-    display: inline;
-    padding: 1rem;
+    display: inline-block;
 }
 
 .regularPrice {
     color: var(--grey);
     font-size: var(--fs-p);
+    padding: 0.5rem;
 }
 
 .sale {
     color: var(--green-500);
     font-weight: var(--fw-700);
     font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 button {
@@ -93,7 +96,7 @@ button {
     color: var(--white);
     border: none;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: var(--ff-montserrat);
     font-weight: var(--fw-500);
@@ -108,4 +111,38 @@ button img {
     height: 20px;
     margin-left: 1rem;
     padding-right: 0.2rem;
+}
+
+button:hover {
+    background-color: var(--green-700);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+
+    .productName {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .sale {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 70%;
+    }
 }
