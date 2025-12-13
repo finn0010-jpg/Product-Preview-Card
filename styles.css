@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* Colors */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --ff-montserrat: 'Montserrat', serif;
+    --ff-fraunces: 'Fraunces', sans-serif;
+    --fs-p: 1rem;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-fraunces);
+}
+
+.container {
+    margin: auto;
+    background-color: var(--white);
+    width: 375px;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+img {
+    width: 375px;
+    border-radius: 10px 10px 0 0;
+}
+
+.label {
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+    font-weight: var(--fw-500);
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-p);
+    color: var(--grey);
+}
+
+.productName {
+    padding: 1rem;
+    font-weight: var(--fw-700);
+    color: var(--black);
+}
+
+.description {
+    padding: 1rem;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-500);
+    color: var(--grey);
+}
+
+.price p {
+    display: inline;
+    padding: 1rem;
+}
+
+.regularPrice {
+    color: var(--grey);
+    font-size: var(--fs-p);
+}
+
+.sale {
+    color: var(--green-500);
+    font-weight: var(--fw-700);
+    font-size: 2rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    background-color: var(--green-500);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--ff-montserrat);
+    font-weight: var(--fw-500);
+    font-size: var(--fs-p);
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+    padding-right: 0.2rem;
+}
