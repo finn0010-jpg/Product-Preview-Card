@@ -118,3 +118,25 @@ button img {
 button:hover {
     background-color: var(--green-700);
 }
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .label, .productName, .description, .price, button {
+        padding: 1rem;
+    }
+
+    .sale {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 80%;
+    }
+}
