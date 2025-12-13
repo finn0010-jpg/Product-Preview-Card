@@ -26,13 +26,11 @@
 
 body {
     background-color: var(--cream);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family: var(--ff-fraunces);
-    width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -41,7 +39,52 @@ body {
     width: 375px;
     margin-top: 1rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+    @media (min-width: 600px) {
+    .container {
+        orientation: landscape;
+        width: 600px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .image img {
+        content: url(./images/image-product-desktop.jpg);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .label, .productName, .description, .price, .cart {
+        width: 50%;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    button {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 
 img {
     width: 375px;
@@ -119,26 +162,3 @@ button:hover {
     background-color: var(--green-700);
 }
 
-@media (max-width: 500px) {
-    .container {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .label, .productName, .description, .price, button {
-        padding: 1rem;
-    }
-
-    .sale {
-        font-size: 1.5rem;
-    }
-
-    button {
-        width: 80%;
-    }
-}
